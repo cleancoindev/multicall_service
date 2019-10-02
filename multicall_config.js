@@ -17,15 +17,7 @@ const configs = {
     rinkeby: {
         rpcUrl: "https://rinkeby.infura.io/",
         multicallAddress: "0x42ad527de7d4e9d9d011ac45b31d8551f8fe9821"
-    },    
+    },
 };
 
-function getConfig(network) {
-    if (network in configs) {
-        return configs[network];
-    } else {
-        throw "Invalid network";
-    }
-};
-
-exports.getConfig = getConfig;
+exports.configs = configs;
